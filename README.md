@@ -1,5 +1,12 @@
 ![preview](.images/preview.png)
 
+# Install
+## For ArchLinux
+Not complete yet...
+```bash
+$ yay -S hyprland wezterm waybar hyprshot firefox swww
+```
+
 # Hyprland
 ## Keybinds
 
