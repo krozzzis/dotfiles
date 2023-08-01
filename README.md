@@ -18,10 +18,12 @@ $ yay -S hyprland wezterm waybar hyprshot firefox swww
 - ```MOD + B``` toggle bar visibility
 
 ### Focus and a movement
-- ```MOD + [hjkl]``` move focus according to vim-style direction
-- ```MOD + SHIFT + [hjkl]``` swap active window with next in direction
+- ```MOD + [hjkl]``` move focus according to vim-style a direction
+- ```MOD + SHIFT + [hjkl]``` swap active window with next in a direction
 - ```MOD + [0-9]``` switch between workspaces
 - ```MOD + SHIFT + [0-9]``` move active window to a workspace
+- ```MOD + .``` move focus to the next monitor
+- ```MOD + SHIFT + .``` move active window to the next monitor
 
 ### Layout
 - ```MOD + Y``` use __master__ layout
