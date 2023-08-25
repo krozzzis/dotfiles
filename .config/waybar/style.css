@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrainsMono Nerd Font;
+    font-family: JetBrainsMono Nerd Font, sans-serif;
     font-size: 12px;
 }
 
@@ -39,6 +39,14 @@ window#waybar.hidden {
     color: white;
 }
 
+#custom-playerctl {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 10px;
+    color: #cdd6f4;
+    background: #1e1e2e;
+}
+
 #language {
     padding-left: 16px;
     padding-right: 16px;
@@ -57,9 +65,11 @@ window#waybar.hidden {
     background: #1e1e2e;
 }
 
-#custom-weather {
+#tray {
+    padding-left: 16px;
     padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px;
+    margin-right: 8px;
     color: #cdd6f4;
     background: #1e1e2e;
 }
@@ -88,19 +98,17 @@ window#waybar.hidden {
     background: #1e1e2e;
 }
 
-#tray {
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
-    margin-right: 8px;
-    color: #cdd6f4;
-    background: #1e1e2e;
-}
-
 #custom-power {
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 10px;
+    color: #cdd6f4;
+    background: #1e1e2e;
+}
+
+#custom-weather {
+    padding-right: 16px;
+    border-radius: 0px 10px 10px 0px;
     color: #cdd6f4;
     background: #1e1e2e;
 }

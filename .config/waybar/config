@@ -1,9 +1,9 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "margin": "2 4 0 4",
+    "margin": "2 8 0 8",
 
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "custom/playerctl"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["hyprland/language", "pulseaudio", "custom/mem", "tray", "clock", "custom/power"],
 
@@ -20,6 +20,16 @@
     "hyprland/language": {
         "format-en": "en",
         "format-ru": "ru",
+    },
+
+    "hyprland/window": {
+        "separate-outputs": true,
+        "max-lenght": 40,
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 0
     },
 
     "pulseaudio": {
@@ -51,19 +61,13 @@
         "tooltip": false,
     },
 
-    "custom/power": {
-        "format": "⏻",
-        "on-click": "./scripts/power-menu.sh",
-        "tooltip": false,
-    },
-
-    "tray": {
-        "icon-size": 16,
-        "spacing": 0
-    },
-
-    "hyprland/window": {
-        "separate-outputs": true,
-    },
+    "custom/playerctl": {
+		"format": "{}",
+		"return-type": "json",
+		"max-length": 40,
+		"exec": "$HOME/Scripts/playerctl.sh",
+		"on-click": "playerctl play-pause",
+		"on-right-click": "playerctl next",
+	},
 }
 
